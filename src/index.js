@@ -6,9 +6,9 @@ import './index.css';
 class Quote extends React.Component {
     render() {
         return ( 
-            <div className="quoteBox">
-                <div className="quote">{ this.props.quote }</div>
-                <div className="author">- { this.props.author }</div>
+            <div>
+                <div className="quote-text">{ this.props.quote }</div>
+                <div className="quote-author">- { this.props.author }</div>
             </div>
         );
     }
@@ -17,7 +17,7 @@ class Quote extends React.Component {
 class Btn extends React.Component{
     render() {
         return (
-            <button className="getBtn" onClick={() => this.props.onClick()}>New quote</button>
+            <button className="btn" onClick={() => this.props.onClick()}>New quote</button>
         );
     }
 }
@@ -60,9 +60,11 @@ class Reader extends React.Component {
 
     render() {
         return (
-            <div className="container">
-                <Quote quote={this.state.quote} author={this.state.author}></Quote>
-                <Btn onClick={() => this.handleClick()}></Btn>
+            <div className="quote-container">
+                <div className="quote-box">
+                    <Quote quote={this.state.quote} author={this.state.author}></Quote>
+                    <Btn onClick={() => this.handleClick()}></Btn>
+                </div>
             </div>
         );
     }
