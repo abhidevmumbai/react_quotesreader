@@ -70,7 +70,6 @@ class Reader extends React.Component {
     }
 }
 
-ReactDOM.render( <
-    Reader / > ,
+ReactDOM.render( <Reader / > ,
     document.getElementById('root')
 );

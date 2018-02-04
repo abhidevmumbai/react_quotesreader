@@ -1,7 +1,10 @@
+html, body, #root, .quote-container {
+	height: 100%;
+}
 body {
 	background: #eee;
 	font: 14px "Century Gothic", Futura, sans-serif;
-	margin: 20px;
+	margin: 0;
 }
 
 .quote-container {
